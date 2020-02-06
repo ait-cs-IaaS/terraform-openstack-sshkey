@@ -6,7 +6,7 @@ This module uploads a public sshkey into openstack
 
 ```
 terraform {
-    source = "/home/hw/Projekte/Cyberrange/cr-v2/terraform-modules/openstack-sshkey"
+    source = "git@git-service.ait.ac.at:sct-cyberrange/terraform-modules/openstack-sshkey.git"
 }
 
 inputs = {
