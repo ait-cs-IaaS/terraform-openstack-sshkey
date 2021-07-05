@@ -1,4 +1,4 @@
-# Terraform: openstack-sshkey
+# Terraform: terraform-openstack-sshkey
 
 This module uploads a public sshkey into openstack
 
@@ -6,12 +6,11 @@ This module uploads a public sshkey into openstack
 
 ```
 terraform {
-    source = "git@git-service.ait.ac.at:sct-cyberrange/terraform-modules/openstack-sshkey.git"
+  source = "git@github.com:ait-cs-IaaS/terraform-openstack-sshkey.git"
 }
 
 inputs = {
-    name = "cyberrange-key"
-    key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4mBq+w+Z9b40GgLAAhr/9ucXbNZYE19/dQV1RoKlG35CtPfe1IWMZAW0HPOCP4DH47X4nBHI0JgJau2zmLC3wGyB4e8cJNZBiB9aVPzPOADUKgjAtTlJmgnY/Rf7C/5vYE6y/ygeAlyiIGC4NP3Na3mxdYH72qzwO3uo+04F4wSnYK9n7rHwk8aNkf1JStRDlELCOE0QawYcT6vl50D8BHPIEuh+yrGZ7BSnylfY+PJNqd4nd+YmPwsyBSbYWlenqiJTt7SCSuxXo6i7xbeV2trUKg03SWKHPXlhUdi8cP/5BMvcZvcfbktv1ZoSJam1sihiSf7pxXil36yhi2fGT"
+  name = "testbed-key"
+  key =  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCsDt78DOBnr6wP/5r9iV/SP/OCvE3HXbnD289Xy2j2rUw2OzA/BTpC4zmoMrvStYISnV6sJluGX37o/SHtitixvN2znkc4kbP5Qi9SeGpRc+lduO8l4/wX9Ul+ncrhNNUsxGy51YNeqNPcs1ZUS73ywVHxdGZwKQLH0vx+RNWAgQ=="
 }
-
 ```
